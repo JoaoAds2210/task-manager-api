@@ -1,4 +1,27 @@
 package dtos.card;
 
-public record CardRequest (){
-}
+import enums.Priority;
+import enums.Status;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+import java.time.LocalDateTime;
+
+public record CardRequest (
+        @NotBlank(message = "O título é obrigatório")
+        String title,
+
+        String description,
+
+        @NotNull(message = "O status é obrigatório")
+        Status status,
+
+        @NotNull(message = "A prioridade é obrigatória")
+        Priority priority,
+
+        Integer position,
+
+        String assigneeName,
+
+        LocalDateTime dueDate
+){}
