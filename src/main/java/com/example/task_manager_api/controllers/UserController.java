@@ -11,7 +11,7 @@ import com.example.task_manager_api.services.UserService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/api/user")
 public class UserController {
 
     @Autowired
