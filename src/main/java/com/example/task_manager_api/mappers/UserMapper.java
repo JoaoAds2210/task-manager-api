@@ -12,7 +12,7 @@ public class UserMapper {
         User user = new User();
         user.setName(requestDTO.name());
         user.setEmail(requestDTO.email());
-        user.setSenha(requestDTO.senha()); // TODO - Depois encriptar com Bcrypt, quando o Security estiver pronto
+        user.setSenha(requestDTO.senha()); //  Depois encriptar com Bcrypt, quando o Security estiver pronto
 
         return user;
     }
