@@ -26,7 +26,7 @@ public class Board {
     @Column(columnDefinition = "TEXT")
     private String description;
 
-    private String ownerName; //substituir por User quando existir
+    private String userName;
 
     @Column(nullable = false)
     private Boolean archived;
